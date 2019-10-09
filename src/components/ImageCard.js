@@ -23,7 +23,7 @@ class ImageCard extends Component {
           <img ref={this.imageRef}
             src={this.props.image.urls.regular}
                alt={this.props.image.alt_description} />
-               <ImageLike/>
+  
       </div>
     )
   }

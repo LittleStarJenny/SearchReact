@@ -35,13 +35,13 @@ navigate(`/${this.state.val}` , {replace:false});
                 placeholder="Hej"
                 onChange={this.handleChange}/>
             </form>
-            {this.props.imagesArrayfromAsync.length > 0 &&
+            {/* {this.props.imagesArrayfromAsync.length > 0 &&
             <Redirect to={{
                 pathname: '/images',
-                state: {images: this.props.imagesArrayfromAsync}
+                state: {images: this.props.imagesArrayfromAsync} */}
                
-            }}/>
-        }
+            {/* }}/> */}
+        {/* } */}
         </div>
         );
     }

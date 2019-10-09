@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Axios from 'axios';
 import SearchBar from "./components/SearchBar";
 import Header from "./components/Header";
+import View from "./components/View";
 
 // import Router from './components/Router';
 
@@ -11,7 +12,11 @@ import Header from "./components/Header";
 
 
 class App extends Component { 
-    state = { images: [] };
+    constructor(props) {
+        super(props);
+    this.state = { images: [] 
+    }
+    };
 
 
 handleSubmit = async (val) => {
@@ -35,7 +40,8 @@ handleSubmit = async (val) => {
            
             <div>
                 <Header/>
-                <SearchBar userSubmit ={this.handleSubmit} imagesArrayfromAsync={this.state.images}/>
+                <SearchBar userSubmit ={this.handleSubmit}/>
+                <View imagesArrayfromAsync={this.state.images} />
 
             </div>
            
@@ -43,5 +49,6 @@ handleSubmit = async (val) => {
 
     }
 }
+export default App;
 
 ReactDOM.render(<App/>, document.querySelector("#root"));
