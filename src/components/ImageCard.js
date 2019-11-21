@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ImageLike from './ImageLike';
 
 class ImageCard extends Component {
     constructor(props) {

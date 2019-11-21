@@ -10,7 +10,9 @@
     width: 250px;
 }
 
-
+.wiki p:nth-child(1), .wiki p:nth-child(2), .wiki p:nth-child(4) {
+  display: none;
+}
 
 .likeheart {
   /*  width: 10%; */

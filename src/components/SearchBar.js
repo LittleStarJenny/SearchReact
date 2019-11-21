@@ -1,6 +1,5 @@
 import React , {Component} from "react";
 import { navigate } from "@reach/router";
-import { Redirect } from 'react-router-dom';
 
 
 class SearchBar extends Component {
@@ -20,11 +19,9 @@ class SearchBar extends Component {
 
 handleSubmit = (e)=> {
 e.preventDefault();
-this.props.userSubmit(this.state.val)
+this.props.userSubmit(this.state.val);
 navigate(`/${this.state.val}` , {replace:false});
 }
-
-
 
 
     render() {
